@@ -1,1 +1,319 @@
-/* You can add global styles to this file, and also import other style files */
+/* General */
+section {
+    padding-top: 80px;
+    background: #3A3E4B;
+}
+
+header h4 {
+    font-size: 1rem;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.section-header h1 {
+    font-size: 4rem;
+}
+
+.section-header h2 {
+    font-size: 3rem;
+}
+
+.section-header h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: #FF9138;
+}
+
+.section-body {
+    padding: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.background-item-color {
+    background: #FF9138;
+}
+
+/* Header */
+nav {
+    background: #3A3E4B;
+}
+
+.navbar {
+    transition: 0.5s;
+}
+
+.navbar-brand-image {
+    height: 60px;
+}
+
+.navbar-toggler.button-toggler {
+    border: 3px solid #FF9138;
+}
+
+.navbar-border-hover {
+    border-top: 3px solid transparent;
+    transform: translateY(-3px);
+}
+
+.navbar-border-hover:hover {
+    border-top: 3px solid #ff9138;
+    transform: translateY(-3px);
+}
+
+.navbar-length {
+    width: 90%;
+}
+
+.navbar-botton-container {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+@media screen and (max-width : 751px) {
+    .navbar-length {
+        width: 100%;
+    }
+
+    .navbar-border-hover {
+        border-top: 0;
+    }
+
+    .navbar-border-hover:hover {
+        border: 3px solid #ff9138;
+        transform: translateY(-3px);
+    }
+
+    .navbar-botton-container {
+        border-radius: 50px;
+    }
+
+    header h4 {
+        font-size: 0.8rem;
+    }
+}
+
+/* Aside */
+.aside-container {
+    float: left;
+    margin-top: 150px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.aside-icon {
+    height: 70px;
+    width: 70px;
+}
+
+@media screen and (max-width : 478px) {
+    aside {
+        visibility: hidden;
+    }
+}
+
+/* Hero */
+.section-hero-background-image {
+    background-image: url('/assets/img/bgImage2.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.section-hero-header-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.section-header {
+    margin-right: 50px;
+}
+
+.section-hero-article-stack-icon {
+    height: 60px;
+    width: 60px;
+}
+
+/* About Me*/
+.section-aboutme-article {
+    text-align: justify;
+    font-size: 2rem;
+}
+
+/* Experience */
+.section-experience-article {
+    margin-bottom: 10px;
+    border: solid 2px #FF9138;
+    border-radius: 24px;
+}
+
+.section-experience-article:hover {
+    background: #FF9138;
+    border: solid 2px;
+}
+
+.section-experience-text {
+    flex: 53%;
+}
+
+/* Education */
+.section-education-article {
+    margin-bottom: 10px;
+    border: solid 2px #FF9138;
+    border-radius: 24px;
+}
+
+.section-education-article:hover {
+    background: #FF9138;
+    border: solid 2px;
+}
+
+.section-education-text {
+    flex: 53%;
+}
+
+/* Skill */
+#section-skill .section-body {
+    margin: 0px 200px;
+}
+
+.progress .progress-bar {
+    background-color: orangered;
+    border-radius: 10px;
+    transition: all 1s;
+}
+
+/* Project */
+.section-project-article {
+    margin-bottom: 10px;
+    border: solid 2px #FF9138;
+    border-radius: 24px;
+}
+
+.section-project-article:hover {
+    background: #FF9138;
+    border: solid 2px;
+}
+
+.section-project-text {
+    flex: 53%;
+}
+
+/* Modal */
+
+dialog::backdrop {
+    backdrop-filter: blur(10px);
+}
+
+.animate {
+    animation: animatezoom 0.6s
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.section-login-header-btn-close {
+    text-align: end;
+    color: #000;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.section-login-header-btn-close:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.section-login-form label {
+    padding: 12px;
+}
+
+.section-login-form input {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+}
+
+.section-login-form button {
+    background-color: #FF9138;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: end;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+
+    .cancelbtn {
+        width: 100%;
+    }
+}
