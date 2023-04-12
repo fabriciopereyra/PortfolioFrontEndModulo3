@@ -14,6 +14,8 @@ import { EducationComponent } from './components/main/education/education.compon
 import { SkillComponent } from './components/main/skill/skill.component';
 import { ProjectComponent } from './components/main/project/project.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ArgentinaProgramaImgComponent } from './components/header/argentina-programa-img/argentina-programa-img.component';
+import { PortfolioService } from './services/portfolio.service';
 
 @NgModule({
   declarations: [
@@ -28,13 +30,14 @@ import { FooterComponent } from './components/footer/footer.component';
     EducationComponent,
     SkillComponent,
     ProjectComponent,
-    FooterComponent
+    FooterComponent,
+    ArgentinaProgramaImgComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [PortfolioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
