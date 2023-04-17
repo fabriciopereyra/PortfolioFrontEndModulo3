@@ -16,6 +16,8 @@ import { ProjectComponent } from './components/main/project/project.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ArgentinaProgramaImgComponent } from './components/header/argentina-programa-img/argentina-programa-img.component';
 import { PortfolioService } from './services/portfolio.service';
+import { NavbarButtonComponent } from './components/header/navbar-button/navbar-button.component';
+import { NavbarOptionListComponent } from './components/header/navbar-option-list/navbar-option-list.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { PortfolioService } from './services/portfolio.service';
     SkillComponent,
     ProjectComponent,
     FooterComponent,
-    ArgentinaProgramaImgComponent
+    ArgentinaProgramaImgComponent,
+    NavbarButtonComponent,
+    NavbarOptionListComponent
   ],
   imports: [
     BrowserModule,

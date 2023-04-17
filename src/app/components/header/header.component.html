@@ -3,55 +3,17 @@
   <!--Navbar-->
   <nav class="navbar navbar-expand-md fixed-top" id="navbar">
 
-    <!-- ArgentinaProgramaImg -->
-    <app-argentina-programa-img></app-argentina-programa-img>
+    <div class="container-fluid">
 
-    <!--Navbar Button-->
-    <button class="navbar-toggler button-toggler" type="button" data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-      aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <!-- ArgentinaProgramaImg -->
+      <app-argentina-programa-img></app-argentina-programa-img>
 
-    <!--Navbar Option List-->
-    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-      <ul class="navbar-nav justify-content-between border-top text-center navbar-length">
-        <li class="nav-item">
-          <a class="nav-link navbar-border-hover text-white" href="#">
-            <h4>Inicio</h4>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link navbar-border-hover text-white" href="#section-aboutme">
-            <h4>Acerca de</h4>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link navbar-border-hover text-white" href="#section-experience">
-            <h4>Experiencia</h4>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link navbar-border-hover text-white" href="#section-education">
-            <h4>Educación</h4>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link navbar-border-hover text-white" href="#section-skill">
-            <h4>Habilidades</h4>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link navbar-border-hover text-white" href="#section-project">
-            <h4>Proyectos</h4>
-          </a>
-        </li>
-        <li class="nav-item">
-          <button id="btnModalOpen" class="nav-link text-white background-item-color navbar-botton-container">
-            Log In
-          </button>
-        </li>
-      </ul>
+      <!--Navbar Button-->
+      <app-navbar-button></app-navbar-button>
+
+      <!--Navbar Option List-->
+      <app-navbar-option-list></app-navbar-option-list>
+
     </div>
   </nav>
 </header>

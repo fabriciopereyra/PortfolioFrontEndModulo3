@@ -36,64 +36,7 @@ button:hover {
     background: #FF9138;
 }
 
-/* Header */
-nav {
-    background: #3A3E4B;
-}
 
-.navbar {
-    transition: 0.5s;
-}
-
-.navbar-brand-image {
-    height: 60px;
-}
-
-.navbar-toggler.button-toggler {
-    border: 3px solid #FF9138;
-}
-
-.navbar-border-hover {
-    border-top: 3px solid transparent;
-    transform: translateY(-3px);
-}
-
-.navbar-border-hover:hover {
-    border-top: 3px solid #ff9138;
-    transform: translateY(-3px);
-}
-
-.navbar-length {
-    width: 90%;
-}
-
-.navbar-botton-container {
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-}
-
-@media screen and (max-width : 751px) {
-    .navbar-length {
-        width: 100%;
-    }
-
-    .navbar-border-hover {
-        border-top: 0;
-    }
-
-    .navbar-border-hover:hover {
-        border: 3px solid #ff9138;
-        transform: translateY(-3px);
-    }
-
-    .navbar-botton-container {
-        border-radius: 50px;
-    }
-
-    header h4 {
-        font-size: 0.8rem;
-    }
-}
 
 /* Aside */
 .aside-container {
