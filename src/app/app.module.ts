@@ -14,10 +14,9 @@ import { EducationComponent } from './components/main/education/education.compon
 import { SkillComponent } from './components/main/skill/skill.component';
 import { ProjectComponent } from './components/main/project/project.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { ArgentinaProgramaImgComponent } from './components/header/argentina-programa-img/argentina-programa-img.component';
 import { PortfolioService } from './services/portfolio.service';
-import { NavbarButtonComponent } from './components/header/navbar-button/navbar-button.component';
-import { NavbarOptionListComponent } from './components/header/navbar-option-list/navbar-option-list.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NavbarComponent } from './components/header/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -33,15 +32,10 @@ import { NavbarOptionListComponent } from './components/header/navbar-option-lis
     SkillComponent,
     ProjectComponent,
     FooterComponent,
-    ArgentinaProgramaImgComponent,
-    NavbarButtonComponent,
-    NavbarOptionListComponent
+    NavbarComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [PortfolioService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

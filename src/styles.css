@@ -1,16 +1,9 @@
 /* General */
-section {
-    padding-top: 80px;
-    background: #3A3E4B;
-}
 
-header h4 {
-    font-size: 1rem;
-}
 
-button:hover {
-    opacity: 0.8;
-}
+
+
+
 
 .section-header h1 {
     font-size: 4rem;
