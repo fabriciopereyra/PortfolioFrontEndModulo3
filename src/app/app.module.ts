@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MainComponent } from './components/main/main.component';
-import { ModalComponent } from './components/modal/modal.component';
 import { SocialComponent } from './components/main/social/social.component';
 import { HeroComponent } from './components/main/hero/hero.component';
 import { AboutmeComponent } from './components/main/aboutme/aboutme.component';
@@ -17,13 +16,13 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PortfolioService } from './services/portfolio.service';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './components/header/navbar/navbar.component';
+import { ModalComponent } from './components/header/modal/modal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     MainComponent,
-    ModalComponent,
     SocialComponent,
     HeroComponent,
     AboutmeComponent,
@@ -32,9 +31,9 @@ import { NavbarComponent } from './components/header/navbar/navbar.component';
     SkillComponent,
     ProjectComponent,
     FooterComponent,
-    NavbarComponent,
+    NavbarComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, ModalComponent],
   providers: [PortfolioService],
   bootstrap: [AppComponent],
 })
