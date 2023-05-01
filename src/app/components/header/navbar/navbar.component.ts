@@ -6,11 +6,12 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent {
-  
+
+  // Colapsar navbar al apretar boton  
   isMenuCollapsed = true;
 
+  //Hacer transparente navbar al subir completamente la pagina
   nav = true;
-
   @HostListener("document:scroll")
   scrollfunction(){
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
