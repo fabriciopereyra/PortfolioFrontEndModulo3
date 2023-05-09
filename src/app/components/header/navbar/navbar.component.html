@@ -21,44 +21,43 @@
         <div class="navbar-collapse" [ngbCollapse]="isMenuCollapsed">
             <ul class="navbar-nav justify-content-between text-center navbar-length ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link text-white" (click)="isMenuCollapsed = true"
-                        aria-current="page" href="#">
+                    <a class="nav-link text-white" (click)="isMenuCollapsed = true" aria-current="page" href="#">
                         <span>Inicio</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" (click)="isMenuCollapsed = true"
-                        href="#section-aboutme">
+                    <a class="nav-link text-white" (click)="isMenuCollapsed = true" href="#section-aboutme">
                         <span>Acerca de</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" (click)="isMenuCollapsed = true"
-                        href="#section-experience">
+                    <a class="nav-link text-white" (click)="isMenuCollapsed = true" href="#section-experience">
                         <span>Experiencia</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" (click)="isMenuCollapsed = true"
-                        href="#section-education">
+                    <a class="nav-link text-white" (click)="isMenuCollapsed = true" href="#section-education">
                         <span>Educación</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" (click)="isMenuCollapsed = true"
-                        href="#section-skill">
+                    <a class="nav-link text-white" (click)="isMenuCollapsed = true" href="#section-skill">
                         <span>Habilidades</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" (click)="isMenuCollapsed = true"
-                        href="#section-project">
+                    <a class="nav-link text-white" (click)="isMenuCollapsed = true" href="#section-project">
                         <span>Proyectos</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <button id="btnModalOpen" class="nav-link text-white background-item-color navbar-botton-container">
-                        Log In
+                    <button class="nav-link text-white background-item-color navbar-botton-container" type="button"
+                        (click)="onLogIn()" *ngIf="!isLogged">
+                        <span>Log In</span>
+                    </button>
+                    <button class="nav-link text-white background-item-color navbar-botton-container" type="button"
+                        (click)="onLogOut()" *ngIf="isLogged">
+                        <span>Log Out</span>
                     </button>
                 </li>
             </ul>

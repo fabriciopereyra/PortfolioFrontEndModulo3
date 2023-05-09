@@ -13,10 +13,22 @@ import { EducationComponent } from './components/main/education/education.compon
 import { SkillComponent } from './components/main/skill/skill.component';
 import { ProjectComponent } from './components/main/project/project.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { PortfolioService } from './services/portfolio.service';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './components/header/navbar/navbar.component';
 import { ModalComponent } from './components/header/modal/modal.component';
+import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/login/login.component';
+import { FormsModule } from '@angular/forms';
+import { InterceptorService } from './services/interceptor.service';
+import { NewExperienceFormComponent } from './components/main/experience/new-experience-form/new-experience-form.component';
+import { UpdateExperienceFormComponent } from './components/main/experience/update-experience-form/update-experience-form.component';
+import { NewEducationFormComponent } from './components/main/education/new-education-form/new-education-form.component';
+import { UpdateEducationFormComponent } from './components/main/education/update-education-form/update-education-form.component';
+import { NewProjectFormComponent } from './components/main/project/new-project-form/new-project-form.component';
+import { UpdateProjectFormComponent } from './components/main/project/update-project-form/update-project-form.component';
+import { NewSkillFormComponent } from './components/main/skill/new-skill-form/new-skill-form.component';
+import { UpdateSkillFormComponent } from './components/main/skill/update-skill-form/update-skill-form.component';
 
 @NgModule({
   declarations: [
@@ -31,10 +43,27 @@ import { ModalComponent } from './components/header/modal/modal.component';
     SkillComponent,
     ProjectComponent,
     FooterComponent,
-    NavbarComponent
+    NavbarComponent,
+    HomeComponent,
+    LoginComponent,
+    NewExperienceFormComponent,
+    UpdateExperienceFormComponent,
+    NewEducationFormComponent,
+    UpdateEducationFormComponent,
+    NewProjectFormComponent,
+    UpdateProjectFormComponent,
+    NewSkillFormComponent,
+    UpdateSkillFormComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule, ModalComponent],
-  providers: [PortfolioService],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgbModule,
+    ModalComponent,
+    HttpClientModule,
+    FormsModule,
+  ],
+  providers: [InterceptorService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

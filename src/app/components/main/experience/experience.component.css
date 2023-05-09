@@ -1,5 +1,5 @@
 section {
-    padding-top: 80px;
+    padding-top: 90px;
     background: #3A3E4B;
 }
 
@@ -16,4 +16,13 @@ section {
 
 .section-experience-text {
     flex: 53%;
+}
+
+i {
+    color: white;
+    padding: 10px;
+}
+
+section > div {
+    background: #3A3E4B;
 }

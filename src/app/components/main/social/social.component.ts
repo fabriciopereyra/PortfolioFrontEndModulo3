@@ -10,7 +10,7 @@ export class SocialComponent {
   hidden = false;
   @HostListener("document:scroll")
   scrollfunction(){
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
       this.hidden = true;
     } else {
       this.hidden = false;
